@@ -29,5 +29,25 @@ namespace ConsoleApplication1
                 Console.WriteLine("By default number of test cases is 10", e);
             }
         }
+	   public static void FileReader(string way, int number)
+        {
+            string file = "";
+            int n = 0;
+            try
+            {
+                StreamReader StreamReader = new StreamReader(way);
+                while (n <= number)
+                {
+                    file += StreamReader.ReadLine();
+                    n++;
+                }
+            }
+            
+            catch (IOException e)
+            {
+                Console.WriteLine("Could not find file", e);
+            }
+            Console.Write(file);          
+        }
     }
 }
