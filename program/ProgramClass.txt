@@ -28,6 +28,7 @@ namespace ConsoleApplication1
             {
                 Console.WriteLine("By default number of test cases is 10", e);
             }
+			FileReader(way, number);
         }
 	   public static void FileReader(string way, int number)
         {
